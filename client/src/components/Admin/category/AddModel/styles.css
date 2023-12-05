@@ -1,0 +1,65 @@
+.TaskModel {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TaskModel .underlay {
+  inset: 0px;
+  position: absolute;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.TaskForm {
+  z-index: 1;
+  width: 400px;
+  padding: 2rem;
+  background: white;
+
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TaskForm input {
+  width: 100%;
+  height: 40px;
+  border-radius: 0px;
+  padding-inline: 1rem;
+  border: 1px solid black;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.TaskForm input::placeholder {
+  color: gray;
+}
+
+.TaskForm .btn-group {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.TaskForm .btn-group button {
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid black;
+  background: black;
+  color: white;
+}
+
+.TaskForm .btn-group button:first-of-type {
+  margin-right: auto;
+  background: transparent;
+  color: black;
+}
